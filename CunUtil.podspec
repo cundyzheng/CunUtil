@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "CunUtil"
-s.version      = "0.1.2"
+s.version      = "0.1.3"
 s.summary      = "Util"
 s.homepage = "https://github.com/crisbarril/LogsFramework"
 s.description  = "A powerful Util."
@@ -16,7 +16,7 @@ LICENSE
 s.platform     = :ios, '10.0'
 
 s.author             = { "Cundy" => "cundyzheng@gmail.com" }
-#s.swift_version = '4.0'
+s.swift_version = '4.0'
 
 s.source = { :http => "https://www.dropbox.com/s/ilkw8zdf8gv8hcd/Binaries.zip?dl=0" }
 
