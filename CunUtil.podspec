@@ -1,44 +1,60 @@
-#
-# Be sure to run `pod lib lint CunUtil.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
-  s.name             = 'CunUtil'
-  s.version          = '0.1.0'
-  s.summary          = 'CunUtil is a mini util library for basic functions'
+s.name         = "CunUtil"
+s.version      = "0.1.0"
+s.summary      = "Util"
+s.homepage = "https://github.com/crisbarril/LogsFramework"
+s.description  = "A powerful Util."
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+s.homepage     = "https://www.moselo.com"
 
-  s.description      = <<-DESC
-This is a util library including some basic functions to use like hex to uicolor converter etc
-                       DESC
+s.license = { :type => 'MIT', :text => <<-LICENSE
+Copyright 2012
+Permission is granted to...
+LICENSE
+}
 
-  s.homepage         = 'https://github.com/cundyzheng/CunUtil'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'cundyzheng' => 'cundyzheng@gmail.com' }
-# s.source           = { :git => 'https://github.com/cundyzheng/CunUtil.git', :tag => s.version.to_s }
+s.platform     = :ios, "10.0"
+
+s.author             = { "Cundy" => "cundyzheng@gmail.com" }
+#s.swift_version = '4.0'
+
 s.source = { :http => "https://www.dropbox.com/s/h0siadgo41x8ywj/Binaries.zip?dl=0" }
 
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+#s.vendored_frameworks = 'TapTalk.framework'
 
-  s.ios.deployment_target = '10.0'
+s.static_framework = true
 
-#s.source_files = 'CunUtil/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'CunUtil' => ['CunUtil/Assets/*.png']
-  # }
+# ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+#
+#  If your library depends on compiler flags you can set them in the xcconfig hash
+#  where they will only apply to your library. If you depend on other Podspecs
+#  you can include multiple dependencies to ensure it works.
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+# s.requires_arc = true
+
+# s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+# s.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => '"${PROJECT_DIR}/.."/**' }
+
+# ――― Prefix Header ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+
+s.prefix_header_contents ='#import "Configs.h"', '#import "TAPStyle.h"', '#import "AFNetworkActivityIndicatorManager.h"', '#import "NSUserDefaults+MPSecureUserDefaults.h"', '#import "PodAsset.h"', '#import "TapTalk.h"', '#import "TAPUtil.h"', '#import "TAPChatManager.h"', '#import "TAPConnectionManager.h"', '#import "TAPContactManager.h"', '#import "TAPContactCacheManager.h"', '#import "TAPCustomBubbleManager.h"', '#import "TAPCustomKeyboardManager.h"', '#import "TAPDataManager.h"', '#import "TAPDatabaseManager.h"', '#import "TAPEncryptorManager.h"', '#import "TAPFetchMediaManager.h"', '#import "TAPFileDownloadManager.h"', '#import "TAPFileUploadManager.h"', '#import "TAPGroupManager.h"', '#import "TAPLocationManager.h"', '#import "TAPMessageStatusManager.h"', '#import "TAPNetworkManager.h"', '#import "TAPNotificationManager.h"', '#import "TAPOldDataManager.h"', '#import "TAPStyleManager.h"', '#import "TAPGrowingTextView.h"', '#import "TAPImageView.h"', '#import "TAPSearchBarView.h"', '#import "UIImage+Color.h"'
+
+# ――― Bundle ------―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+
+#  s.resource_bundles = {
+#      'TapTalk' => [
+#          'Pod/**/*.xib',
+#          'Pod/**/*.storyboard',
+#           'Pod/**/*.{png,jpeg,jpg,xcassets,ttf,otf,caf}',
+#           'TapTalk/**/*.xib',
+#           'TapTalk/**/*.storyboard',
+#           'TapTalk/**/*.{png,jpeg,jpg,xcassets,ttf,otf,caf}'
+#       ]
+#   }
+
+
+# ――― XCConfig ------―――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+#uncomment to disable bitcode
+#    s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO', 'DEBUG_INFORMATION_FORMAT' => 'dwarf' }
+
 end
