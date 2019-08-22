@@ -25,7 +25,7 @@
 #define IS_IPHONE_4_INCH ([[UIScreen mainScreen] bounds].size.height == 568)?YES:NO
 #define IS_IPHONE_4_7_INCH ([[UIScreen mainScreen] bounds].size.height == 667)?YES:NO
 #define IS_IPHONE_5_5_INCH ([[UIScreen mainScreen] bounds].size.height == 736)?YES:NO
-#define IS_IPHONE_X_FAMILY ([TAPUtil safeAreaBottomPadding] > 0)?YES:NO
+#define IS_IPHONE_X_FAMILY ([CUNUtil safeAreaBottomPadding] > 0)?YES:NO
 
 #define IS_BELOW_IOS_7 ([[[[UIDevice currentDevice] systemVersion] substringWithRange:NSMakeRange(0, 1)] integerValue] < 7)?YES:NO
 #define IS_BELOW_IOS_8 ([[[[UIDevice currentDevice] systemVersion] substringWithRange:NSMakeRange(0, 1)] integerValue] < 8)?YES:NO
@@ -52,7 +52,7 @@
 #pragma mark - String
 #define STRING_FROM_BOOL(BOOL) ((BOOL) ? @"YES" : @"NO")
 
-@interface TAPUtil : NSObject {
+@interface CUNUtil : NSObject {
     
 }
 

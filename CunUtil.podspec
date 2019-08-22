@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "CunUtil"
-s.version      = "0.1.3"
+s.version      = "0.1.4"
 s.summary      = "Util"
 s.homepage = "https://github.com/crisbarril/LogsFramework"
 s.description  = "A powerful Util."
@@ -18,7 +18,7 @@ s.platform     = :ios, '10.0'
 s.author             = { "Cundy" => "cundyzheng@gmail.com" }
 s.swift_version = '4.0'
 
-s.source = { :http => "https://www.dropbox.com/s/ilkw8zdf8gv8hcd/Binaries.zip?dl=0" }
+s.source = { :http => "https://www.dropbox.com/s/k5mx9uz5rh54by7/Binaries.zip?dl=0" }
 
 s.ios.deployment_target = '10.0'
 s.ios.vendored_frameworks = 'CunUtil.framework'

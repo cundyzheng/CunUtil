@@ -1,5 +1,5 @@
 //
-//  TAPUtil.m
+//  CUNUtil.m
 //  Traveloka
 //
 //  Created by Ritchie Nathaniel on 3/19/14.
@@ -8,7 +8,7 @@
 
 #import "CUNUtil.h"
 
-@implementation TAPUtil
+@implementation CUNUtil
 
 #pragma mark - Date
 + (BOOL)date:(NSDate*)date isBetweenDate:(NSDate *)beginDate andDate:(NSDate *)endDate{
@@ -134,37 +134,37 @@
 + (UIColor *)randomPastelColor {
     NSInteger randomInteger = (arc4random() % 10) + 1;
     
-    UIColor *backgroundColor = [TAPUtil getColor:@"B6E6F0"];
+    UIColor *backgroundColor = [CUNUtil getColor:@"B6E6F0"];
     
     if (randomInteger == 1) {
-        backgroundColor = [TAPUtil getColor:@"B6E6F0"];
+        backgroundColor = [CUNUtil getColor:@"B6E6F0"];
     }
     else if (randomInteger == 2) {
-        backgroundColor = [TAPUtil getColor:@"FDB2B9"];
+        backgroundColor = [CUNUtil getColor:@"FDB2B9"];
     }
     else if (randomInteger == 3) {
-        backgroundColor = [TAPUtil getColor:@"F49AB6"];
+        backgroundColor = [CUNUtil getColor:@"F49AB6"];
     }
     else if (randomInteger == 4) {
-        backgroundColor = [TAPUtil getColor:@"D5C1E2"];
+        backgroundColor = [CUNUtil getColor:@"D5C1E2"];
     }
     else if (randomInteger == 5) {
-        backgroundColor = [TAPUtil getColor:@"FDD292"];
+        backgroundColor = [CUNUtil getColor:@"FDD292"];
     }
     else if (randomInteger == 6) {
-        backgroundColor = [TAPUtil getColor:@"FDC3A7"];
+        backgroundColor = [CUNUtil getColor:@"FDC3A7"];
     }
     else if (randomInteger == 7) {
-        backgroundColor = [TAPUtil getColor:@"D0E69D"];
+        backgroundColor = [CUNUtil getColor:@"D0E69D"];
     }
     else if (randomInteger == 8) {
-        backgroundColor = [TAPUtil getColor:@"99D39E"];
+        backgroundColor = [CUNUtil getColor:@"99D39E"];
     }
     else if (randomInteger == 9) {
-        backgroundColor = [TAPUtil getColor:@"A9DDC7"];
+        backgroundColor = [CUNUtil getColor:@"A9DDC7"];
     }
     else if (randomInteger == 10) {
-        backgroundColor = [TAPUtil getColor:@"C6D3E9"];
+        backgroundColor = [CUNUtil getColor:@"C6D3E9"];
     }
     
     return backgroundColor;
@@ -497,7 +497,7 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
 
 #pragma mark - Device
 + (NSString *)hardwareModel {
-    NSString *hardware = [TAPUtil hardwareString];
+    NSString *hardware = [CUNUtil hardwareString];
     
     //device list updated as 25-9-2016 in stackoverflow.com/a/17261056
     if ([hardware isEqualToString:@"iPhone1,1"])    return [NSString stringWithFormat:@"%@ (%@)", hardware, @"iPhone 1G"];
@@ -771,8 +771,8 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
             valueString = [NSString stringWithFormat:@"%@%@", valueString, currentValueString];
         }
         
-        keyString = [TAPUtil nullToEmptyString:keyString];
-        valueString = [TAPUtil nullToEmptyString:valueString];
+        keyString = [CUNUtil nullToEmptyString:keyString];
+        valueString = [CUNUtil nullToEmptyString:valueString];
         
         [parameterDictionary setObject:valueString forKey:keyString];
     }
@@ -790,7 +790,7 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
 
 + (CGFloat)currentDeviceNavigationBarHeightWithStatusBar:(BOOL)statusBar iPhoneXLargeLayout:(BOOL)iPhoneXLargeLayout {
     NSInteger navigationBarHeight = 44.0f;
-    NSInteger statusBarHeight = [TAPUtil currentDeviceStatusBarHeight];
+    NSInteger statusBarHeight = [CUNUtil currentDeviceStatusBarHeight];
     
     if (IS_IPHONE_X_FAMILY) {
         navigationBarHeight = 44.0f;
