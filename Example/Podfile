@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'CunUtil_Example' do
+  pod 'CunUtil', :path => '../'
+
+  target 'CunUtil_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
