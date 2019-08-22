@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "CunUtil"
-s.version      = "0.1.0"
+s.version      = "0.1.2"
 s.summary      = "Util"
 s.homepage = "https://github.com/crisbarril/LogsFramework"
 s.description  = "A powerful Util."
@@ -13,14 +13,16 @@ Permission is granted to...
 LICENSE
 }
 
-s.platform     = :ios, "10.0"
+s.platform     = :ios, '10.0'
 
 s.author             = { "Cundy" => "cundyzheng@gmail.com" }
 #s.swift_version = '4.0'
 
-s.source = { :http => "https://www.dropbox.com/s/h0siadgo41x8ywj/Binaries.zip?dl=0" }
+s.source = { :http => "https://www.dropbox.com/s/ilkw8zdf8gv8hcd/Binaries.zip?dl=0" }
 
-#s.vendored_frameworks = 'TapTalk.framework'
+s.ios.deployment_target = '10.0'
+s.ios.vendored_frameworks = 'CunUtil.framework'
+#s.vendored_frameworks = 'CunUtil.framework'
 
 s.static_framework = true
 
@@ -37,7 +39,7 @@ s.static_framework = true
 
 # ――― Prefix Header ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-s.prefix_header_contents ='#import "Configs.h"', '#import "TAPStyle.h"', '#import "AFNetworkActivityIndicatorManager.h"', '#import "NSUserDefaults+MPSecureUserDefaults.h"', '#import "PodAsset.h"', '#import "TapTalk.h"', '#import "TAPUtil.h"', '#import "TAPChatManager.h"', '#import "TAPConnectionManager.h"', '#import "TAPContactManager.h"', '#import "TAPContactCacheManager.h"', '#import "TAPCustomBubbleManager.h"', '#import "TAPCustomKeyboardManager.h"', '#import "TAPDataManager.h"', '#import "TAPDatabaseManager.h"', '#import "TAPEncryptorManager.h"', '#import "TAPFetchMediaManager.h"', '#import "TAPFileDownloadManager.h"', '#import "TAPFileUploadManager.h"', '#import "TAPGroupManager.h"', '#import "TAPLocationManager.h"', '#import "TAPMessageStatusManager.h"', '#import "TAPNetworkManager.h"', '#import "TAPNotificationManager.h"', '#import "TAPOldDataManager.h"', '#import "TAPStyleManager.h"', '#import "TAPGrowingTextView.h"', '#import "TAPImageView.h"', '#import "TAPSearchBarView.h"', '#import "UIImage+Color.h"'
+#s.prefix_header_contents ='#import "Configs.h"', '#import "TAPStyle.h"', '#import "AFNetworkActivityIndicatorManager.h"', '#import "NSUserDefaults+MPSecureUserDefaults.h"', '#import "PodAsset.h"', '#import "TapTalk.h"', '#import "TAPUtil.h"', '#import "TAPChatManager.h"', '#import "TAPConnectionManager.h"', '#import "TAPContactManager.h"', '#import "TAPContactCacheManager.h"', '#import "TAPCustomBubbleManager.h"', '#import "TAPCustomKeyboardManager.h"', '#import "TAPDataManager.h"', '#import "TAPDatabaseManager.h"', '#import "TAPEncryptorManager.h"', '#import "TAPFetchMediaManager.h"', '#import "TAPFileDownloadManager.h"', '#import "TAPFileUploadManager.h"', '#import "TAPGroupManager.h"', '#import "TAPLocationManager.h"', '#import "TAPMessageStatusManager.h"', '#import "TAPNetworkManager.h"', '#import "TAPNotificationManager.h"', '#import "TAPOldDataManager.h"', '#import "TAPStyleManager.h"', '#import "TAPGrowingTextView.h"', '#import "TAPImageView.h"', '#import "TAPSearchBarView.h"', '#import "UIImage+Color.h"'
 
 # ――― Bundle ------―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
