@@ -25,12 +25,14 @@ This is a util library including some basic functions to use like hex to uicolor
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'cundyzheng' => 'cundyzheng@gmail.com' }
-  s.source           = { :git => 'https://github.com/cundyzheng/CunUtil.git', :tag => s.version.to_s }
+# s.source           = { :git => 'https://github.com/cundyzheng/CunUtil.git', :tag => s.version.to_s }
+s.source = { :http => "https://www.dropbox.com/s/h0siadgo41x8ywj/Binaries.zip?dl=0" }
+
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files = 'CunUtil/Classes/**/*'
+#s.source_files = 'CunUtil/Classes/**/*'
   
   # s.resource_bundles = {
   #   'CunUtil' => ['CunUtil/Assets/*.png']
