@@ -1,0 +1,16 @@
+PODS:
+  - CunUtil (0.1.0)
+
+DEPENDENCIES:
+  - CunUtil (from `../`)
+
+EXTERNAL SOURCES:
+  CunUtil:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CunUtil: 066e0910352a099a16b3cebe2d8c7bdba3a06dbb
+
+PODFILE CHECKSUM: 86259a7e20baff24060d4b60e259469a6a838cea
+
+COCOAPODS: 1.7.5

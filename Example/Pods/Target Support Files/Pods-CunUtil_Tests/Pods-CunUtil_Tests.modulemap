@@ -1,0 +1,6 @@
+framework module Pods_CunUtil_Tests {
+  umbrella header "Pods-CunUtil_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
